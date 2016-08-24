@@ -6,6 +6,6 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 //@Cucumber.Options(format = {"pretty","html:reports/test-report"},tags= "@Calculator")
-@Cucumber.Options(format = {"json:target/generated-test-sources/dw.json"},tags = "@Calculator")
+@Cucumber.Options(format = {"json:target/surefire-reports/dw.json"},tags = "@Calculator")
 public class SecondTest {
 }
