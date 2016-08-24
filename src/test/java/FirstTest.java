@@ -16,7 +16,8 @@ public class FirstTest {
     public void test(){
         a = new Add();
         assertEquals(0,a.addtest(0,0));
-        System.out.println("test is successful");
+        System.out.println("test1 is successful");
         assertEquals(10,a.addtest(1,9));
+        System.out.println("test2 is successful");
     }
 }
