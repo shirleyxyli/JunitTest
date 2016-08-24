@@ -13,25 +13,25 @@ public class FirstCase {
     public int b;
     public int c;
 
-    @Given("^输入第一个数字20$")
-    public void 输入第一个数字20(){
+    @Given("^Input the first num is 20$")
+    public void InputFirNum(){
         a=20;
     }
 
-    @And("^输入第二个数字40$")
-    public void 输入第二个数字40(){
+    @And("^Input the second num is 40$")
+    public void InputSecNum(){
         b=40;
     }
 
-    @When("^两个数进行相加$")
-    public void 两个数进行相加(){
+    @When("^Two numbers add$")
+    public void TwoNumAdd(){
         Add t = new Add();
         c=t.addtest(a,b);
     }
 
-    @Then("^得出的结果(\\d+)$")
-    public void 得出的结果(int ExpectedResult){
+    @Then("^The result should be (\\d+)$")
+    public void AddResult(int ExpectedResult){
         assertEquals(ExpectedResult,c);
-        System.out.println("得出结果为:"+c);
+        System.out.println("Result is:"+c);
     }
 }
